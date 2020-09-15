@@ -1,0 +1,16 @@
+def gcd(a, b):
+    res = 0
+    if a == 0:
+        res = 0
+    elif b == 0:
+        res = 0
+    else:
+        while a > 0 or b> 0:
+            if a >= b:
+                a = a % b
+            else:
+                b = b % a
+            if a == 0:
+                return b
+            elif b == 0:
+                return a
